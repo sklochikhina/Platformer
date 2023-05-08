@@ -22,6 +22,7 @@ public class Constants {
                 case TRANSFORM:
                     return 34;
                 case IDLE:
+                    return 30;
                 case DEATH:
                     return 20;
                 case JUMP:
@@ -30,6 +31,7 @@ public class Constants {
                 case ATTACK:
                     return 6;
                 case HIT:
+                    return 5;
                 case FALLING:
                 default:
                     return 4;

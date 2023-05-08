@@ -4,30 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/inputs/KeyboardInputs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/inputs/MouseInputs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/model/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/LoadSave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/attack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/transform.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="upd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platformer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Platformer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/transform.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/transform.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/attack.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/attack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/transform.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/transform.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/inputs/KeyboardInputs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/inputs/KeyboardInputs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/utils/Constants$PLayerActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/utils/Constants$PLayerActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/transform.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/transform.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,26 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Java/Platformer/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/Java/Platformer/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Java\Platformer\src\main\resources" />
@@ -112,7 +106,7 @@
       <workItem from="1683351911686" duration="23410000" />
       <workItem from="1683435096880" duration="186000" />
       <workItem from="1683526689249" duration="1430000" />
-      <workItem from="1683528519624" duration="6789000" />
+      <workItem from="1683528519624" duration="17225000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683122594554</created>
@@ -121,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683122594554</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1683535592250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683535592250</updated>
+    </task>
+    <task id="LOCAL-00003" summary="upd">
+      <created>1683535629402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683535629402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,15 +148,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/inputs/KeyboardInputs.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

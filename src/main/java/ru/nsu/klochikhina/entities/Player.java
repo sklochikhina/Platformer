@@ -16,7 +16,7 @@ public class Player extends Entity{
     private int aniIndex = 0, attIndex = 0, transIndex = 0;
     private int action = TRANSFORM;
     private boolean isMoving = false, isAttacking = false;
-    private boolean isLeft, isRight, isUp, isDown, isRed = true;
+    private boolean isLeft, isRight, isUp, isDown, isRed = true, needToTransform = false;
     
     public Player(float x, float y) {
         super(x, y);
@@ -30,13 +30,14 @@ public class Player extends Entity{
     }
     
     public void render(Graphics graphics){
-        if(action >= 0 && action <= 5)
-            graphics.drawImage(animations[action + (isRed ? 0 : 1)][aniIndex], (int)x, (int)y, 128, 128, null);
-        else if(action == 6)
-            graphics.drawImage(attack[isRed ? 0 : 1][attIndex], (int)x, (int)y, 240, 240, null);
-        else {
-            graphics.drawImage(transformation[isRed ? 1 : 0][transIndex], (int) x - 55, (int) y - 128, 240, 240, null);
-            action = IDLE;
+        if(action >= IDLE && action <= HIT)
+            graphics.drawImage(animations[action * 2 + (isRed ? 0 : 1)][aniIndex], (int)x, (int)y, 128, 128, null);
+        else if(action == ATTACK)
+            graphics.drawImage(attack[isRed ? 0 : 1][attIndex], (int)(x - 5.0), (int)(y - 113.0), 240, 240, null);
+        else if (action == TRANSFORM){
+            graphics.drawImage(transformation[isRed ? 1 : 0][transIndex], (int) (x - 73.0), (int) (y - 151.0), 280, 280, null);
+            if (transIndex == transformation[0].length - 1)
+                needToTransform = false;
         }
     }
     
@@ -74,14 +75,15 @@ public class Player extends Entity{
         
         if (isMoving)
             action = RUNNING;
-        else if (isUp)
-            action = JUMP;
-        else if(!isRed) {
-            action = TRANSFORM;
-            isRed = true;
-        }
         else
             action = IDLE;
+        
+        if (isUp)
+            action = JUMP;
+        else if(needToTransform)
+            action = TRANSFORM;
+        else if(isLeft || isRight)
+            action = RUNNING;
         
         if(isAttacking)
             action = ATTACK;
@@ -92,7 +94,10 @@ public class Player extends Entity{
     
     private void resetAniTick() {
         aniTick = 0;
+        
         aniIndex = 0;
+        attIndex = 0;
+        transIndex = 0;
     }
     
     private void updatePosition() {
@@ -129,7 +134,7 @@ public class Player extends Entity{
         int attackWidthHeight = 60;
         int transformWidthHeight = 70;
         
-        animations = new BufferedImage[12][20];
+        animations = new BufferedImage[12][30];
         attack = new BufferedImage[2][6];
         transformation = new BufferedImage[2][34];
         
@@ -173,6 +178,7 @@ public class Player extends Entity{
     
     public void changeCharacter() {
         isRed = !isRed;
+        needToTransform = true;
     }
     
     public boolean isLeft() {
