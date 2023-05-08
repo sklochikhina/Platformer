@@ -44,7 +44,7 @@ public class Player extends Entity{
     private void updateAnimationTick() {
         aniTick++;
         
-        int aniSpeed = 14;
+        int aniSpeed = 10;
         
         if (aniTick >= aniSpeed) {
             aniTick = 0;
