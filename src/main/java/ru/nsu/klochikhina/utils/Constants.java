@@ -15,7 +15,7 @@ public class Constants {
         public static final int FALLING = 4;    // falling
         public static final int HIT = 5;        // getting hit
         public static final int ATTACK = 6;     // attack by pressing left mouse button
-        public static final int TRANSFORM = 7;  // transform by pressing S (if AWSD) or Down Arrow (if Arrows) button
+        public static final int TRANSFORM = 7;  // transform by pressing E
         
         public static int getSpriteAmount(int action){
             switch (action){

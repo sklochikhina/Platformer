@@ -35,7 +35,7 @@ public class KeyboardInputs implements KeyListener {
             case KeyEvent.VK_RIGHT:
                 panel.getGame().getPlayer().setRight(true);
                 break;
-            case KeyEvent.VK_Q:
+            case KeyEvent.VK_E:
                 panel.getGame().getPlayer().changeCharacter();
                 break;
         }
