@@ -7,6 +7,9 @@ import ru.nsu.klochikhina.model.Game;
 import javax.swing.*;
 import java.awt.*;
 
+import static ru.nsu.klochikhina.model.Game.GAME_HEIGHT;
+import static ru.nsu.klochikhina.model.Game.GAME_WIDTH;
+
 public class GamePanel extends JPanel {
     private final Game game;
     public GamePanel(Game game) {
@@ -20,11 +23,13 @@ public class GamePanel extends JPanel {
     }
     
     private void setPanelSize() {
-        Dimension windowSize = new Dimension(1280, 720);
+        Dimension windowSize = new Dimension(GAME_WIDTH, GAME_HEIGHT);
         
         setMinimumSize(windowSize);
         setPreferredSize(windowSize);
         setMaximumSize(windowSize);
+        
+        System.out.println("size: " + GAME_WIDTH + " : " + GAME_HEIGHT);
     }
     
     public void updateGame(){

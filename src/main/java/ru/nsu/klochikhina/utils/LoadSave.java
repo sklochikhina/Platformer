@@ -9,6 +9,7 @@ public class LoadSave {
     public static final String PLAYER_ATLAS = "img.png";
     public static final String PLAYER_ATTACK = "attack.png";
     public static final String PLAYER_TRANSFORM = "transform.png";
+    public static final String LEVEL_ATLAS = "level.png";
     
     public static BufferedImage getSpriteAtlas(String pictureName){
         BufferedImage image = null;

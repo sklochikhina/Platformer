@@ -1,6 +1,7 @@
 package ru.nsu.klochikhina.model;
 
 import ru.nsu.klochikhina.entities.Player;
+import ru.nsu.klochikhina.levels.LevelManager;
 import ru.nsu.klochikhina.view.GamePanel;
 import ru.nsu.klochikhina.view.GameWindow;
 
@@ -9,18 +10,28 @@ import java.awt.*;
 
 public class Game extends JFrame implements Runnable {
     private static GamePanel panel;
+    private LevelManager manager;
     private Player player;
-
+    
+    public final static int TILES_DEFAULT_SIZE = 32;
+    public final static float SCALE = 1.5f;
+    public final static int TILES_IN_WIDTH = 26;
+    public final static int TILES_IN_HEIGHT = 14;
+    public final static int TILES_SIZE = (int) (TILES_DEFAULT_SIZE * SCALE);
+    public final static int GAME_WIDTH = TILES_SIZE * TILES_IN_WIDTH;
+    public final static int GAME_HEIGHT = TILES_SIZE * TILES_IN_HEIGHT;
+    
     public Game() {
-        initEntities();
+        initClasses();
         panel = new GamePanel(this);
         GameWindow window = new GameWindow(panel);
         panel.requestFocus();
         startGameLoop();
     }
     
-    private void initEntities() {
+    private void initClasses() {
         player = new Player(200, 200);
+//        manager = new LevelManager(this);
     }
     
     private void startGameLoop(){
@@ -30,10 +41,12 @@ public class Game extends JFrame implements Runnable {
 
     public void update(){
         player.update();
+//        manager.update();
     }
     
     public void render(Graphics graphics){
         player.render(graphics);
+//        manager.draw(graphics);
     }
     
     @Override
