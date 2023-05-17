@@ -20,7 +20,7 @@ public class GamePanel extends JPanel {
     }
     
     private void setPanelSize() {
-        Dimension windowSize = new Dimension(1280, 720); // it's 800 instead of 720 in the tutorial
+        Dimension windowSize = new Dimension(1280, 720);
         
         setMinimumSize(windowSize);
         setPreferredSize(windowSize);

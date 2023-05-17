@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="небольшие поправки пикселей в спрайтах и чуть ускорила анимацию" />
+    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="небольшие поправки пикселей в спрайтах и поменяла кнопку трансформации">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/inputs/KeyboardInputs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/inputs/KeyboardInputs.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +94,9 @@
       <workItem from="1683526689249" duration="1430000" />
       <workItem from="1683528519624" duration="18334000" />
       <workItem from="1683558247271" duration="3128000" />
+      <workItem from="1683627450664" duration="753000" />
+      <workItem from="1684303240274" duration="26000" />
+      <workItem from="1684304964235" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683122594554</created>
@@ -127,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683562444005</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="небольшие поправки пикселей в спрайтах и поменяла кнопку трансформации">
+      <created>1683645968486</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683645968486</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,17 +162,7 @@
     <MESSAGE value="upd" />
     <MESSAGE value="исправила спрайты, чтобы не было странного поведения" />
     <MESSAGE value="небольшие поправки пикселей в спрайтах и чуть ускорила анимацию" />
-    <option name="LAST_COMMIT_MESSAGE" value="небольшие поправки пикселей в спрайтах и чуть ускорила анимацию" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="небольшие поправки пикселей в спрайтах и поменяла кнопку трансформации" />
+    <option name="LAST_COMMIT_MESSAGE" value="небольшие поправки пикселей в спрайтах и поменяла кнопку трансформации" />
   </component>
 </project>
