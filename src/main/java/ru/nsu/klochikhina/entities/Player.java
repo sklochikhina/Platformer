@@ -18,8 +18,8 @@ public class Player extends Entity{
     private boolean isMoving = false, isAttacking = false;
     private boolean isLeft, isRight, isUp, isDown, isRed = true, needToTransform = false;
     
-    public Player(float x, float y) {
-        super(x, y);
+    public Player(float x, float y, int width, int height) {
+        super(x, y, width, height);
         loadAnimations();
     }
     
@@ -31,11 +31,11 @@ public class Player extends Entity{
     
     public void render(Graphics graphics){
         if(action >= IDLE && action <= HIT)
-            graphics.drawImage(animations[action * 2 + (isRed ? 0 : 1)][aniIndex], (int)x, (int)y, 128, 128, null);
+            graphics.drawImage(animations[action * 2 + (isRed ? 0 : 1)][aniIndex], (int)x, (int)y, 192, 192, null);
         else if(action == ATTACK)
-            graphics.drawImage(attack[isRed ? 0 : 1][attIndex], (int)(x - 5.0), (int)(y - 113.0), 240, 240, null);
+            graphics.drawImage(attack[isRed ? 0 : 1][attIndex], (int)(x - (5.0 * 1.5)), (int)(y - (112.0 * 1.5)), 360, 360, null);
         else if (action == TRANSFORM){
-            graphics.drawImage(transformation[isRed ? 1 : 0][transIndex], (int) (x - 73.0), (int) (y - 151.0), 280, 280, null);
+            graphics.drawImage(transformation[isRed ? 1 : 0][transIndex], (int) (x - (72.0 * 1.5)), (int) (y - (152.0 * 1.5)), 420, 420, null);
             if (transIndex == transformation[0].length - 1)
                 needToTransform = false;
         }

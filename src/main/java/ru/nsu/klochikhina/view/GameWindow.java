@@ -6,14 +6,14 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 
 public class GameWindow extends JFrame {
-    private final int width = 1280;
-    private final int height = 720;
     public GameWindow(final GamePanel panel) {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         add(panel);
         
         Dimension s = Toolkit.getDefaultToolkit().getScreenSize();
+        int width = 1488;
+        int height = 864;
         int x = (s.width - width) / 2;
         int y = (s.height - height) / 2;
         setBounds(x, y, width, height);

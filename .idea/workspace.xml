@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="upd">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/Level.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/LevelManager.java" afterDir="false" />
+    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="добавляю то, что сделала на паре">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/atlas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/level_sprites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sky.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/LevelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/LevelManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/model/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/LoadSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/LoadSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/LevelManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/LevelManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/model/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/utils/LoadSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/utils/LoadSave.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GamePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GameWindow.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +115,10 @@
       <workItem from="1683627450664" duration="753000" />
       <workItem from="1684303240274" duration="26000" />
       <workItem from="1684304964235" duration="2674000" />
-      <workItem from="1684327271442" duration="2878000" />
+      <workItem from="1684327271442" duration="3645000" />
+      <workItem from="1684470256834" duration="6372000" />
+      <workItem from="1685361348378" duration="220000" />
+      <workItem from="1685361634511" duration="30650000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683122594554</created>
@@ -155,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684305608582</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="добавляю то, что сделала на паре">
+      <created>1684343213225</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684343213225</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +199,7 @@
     <MESSAGE value="небольшие поправки пикселей в спрайтах и чуть ускорила анимацию" />
     <MESSAGE value="небольшие поправки пикселей в спрайтах и поменяла кнопку трансформации" />
     <MESSAGE value="upd" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd" />
+    <MESSAGE value="добавляю то, что сделала на паре" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавляю то, что сделала на паре" />
   </component>
 </project>
