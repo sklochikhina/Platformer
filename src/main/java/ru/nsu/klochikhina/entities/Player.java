@@ -17,6 +17,7 @@ public class Player extends Entity{
     private int action = TRANSFORM;
     private boolean isMoving = false, isAttacking = false;
     private boolean isLeft, isRight, isUp, isDown, isRed = true, needToTransform = false;
+    private int[][] levelData;
     
     public Player(float x, float y, int width, int height) {
         super(x, y, width, height);
@@ -25,20 +26,22 @@ public class Player extends Entity{
     
     public void update(){
         updatePosition();
+//        updateHitbox();
         updateAnimationTick();
         setAnimation();
     }
     
     public void render(Graphics graphics){
         if(action >= IDLE && action <= HIT)
-            graphics.drawImage(animations[action * 2 + (isRed ? 0 : 1)][aniIndex], (int)x, (int)y, 192, 192, null);
+            graphics.drawImage(animations[action * 2 + (isRed ? 0 : 1)][aniIndex], (int)x, (int)y, 96, 96, null);
         else if(action == ATTACK)
-            graphics.drawImage(attack[isRed ? 0 : 1][attIndex], (int)(x - (5.0 * 1.5)), (int)(y - (112.0 * 1.5)), 360, 360, null);
+            graphics.drawImage(attack[isRed ? 0 : 1][attIndex], (int)(x - (4.0 * 1.5)), (int)(y - (56.0 * 1.5)), 180, 180, null);
         else if (action == TRANSFORM){
-            graphics.drawImage(transformation[isRed ? 1 : 0][transIndex], (int) (x - (72.0 * 1.5)), (int) (y - (152.0 * 1.5)), 420, 420, null);
+            graphics.drawImage(transformation[isRed ? 1 : 0][transIndex], (int) (x - (38.0 * 1.5)), (int) (y - (76.0 * 1.5)), 210, 210, null);
             if (transIndex == transformation[0].length - 1)
                 needToTransform = false;
         }
+//        drawHitbox(graphics);
     }
     
     private void updateAnimationTick() {
@@ -141,6 +144,10 @@ public class Player extends Entity{
         fillBuffer(animations, image, animationWidthHeight);
         fillBuffer(attack, attacking, attackWidthHeight);
         fillBuffer(transformation, transform, transformWidthHeight);
+    }
+    
+    public void loadLevelData(int[][] levelData){
+        this.levelData = levelData;
     }
     
     private void fillBuffer(BufferedImage[][] anis, BufferedImage image, int width_height){

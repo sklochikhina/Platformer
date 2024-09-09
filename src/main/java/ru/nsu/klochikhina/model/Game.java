@@ -15,11 +15,11 @@ public class Game extends JFrame implements Runnable {
     
     public final static int TILES_DEFAULT_SIZE = 32;
     public final static float SCALE = 1.5f;
-    public final static int TILES_IN_WIDTH = 32;
-    public final static int TILES_IN_HEIGHT = 32;
+    public final static int TILES_IN_WIDTH = 31;
+    public final static int TILES_IN_HEIGHT = 16;
     public final static int TILES_SIZE = (int) (TILES_DEFAULT_SIZE * SCALE);
-    public final static int GAME_WIDTH = TILES_SIZE * 31;
-    public final static int GAME_HEIGHT = TILES_SIZE * 16;
+    public final static int GAME_WIDTH = TILES_SIZE * TILES_IN_WIDTH;
+    public final static int GAME_HEIGHT = TILES_SIZE * TILES_IN_HEIGHT;
     
     public Game() {
         initClasses();
@@ -30,8 +30,10 @@ public class Game extends JFrame implements Runnable {
     }
     
     private void initClasses() {
-        player = new Player(200, 200, (int) (32 * SCALE), (int) (32 * SCALE));
         manager = new LevelManager(this);
+        player = new Player(200, 200, (int) (12 * 3), (int) (20 * 3));
+        manager.setRed(player.isRed());
+        player.loadLevelData(manager.getCurrentLevel().getLevelData());
     }
     
     private void startGameLoop(){

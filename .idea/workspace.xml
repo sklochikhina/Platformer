@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="добавляю то, что сделала на паре">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/atlas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/level_sprites.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sky.png" afterDir="false" />
+    <list default="true" id="405fb46f-572a-4aed-ae34-8257c4913b07" name="Changes" comment="добавила фон (двигаются облака, город пока стоит на месте, но потом будет двигаться с персонажем), расширила LevelManager, и ещё много всего...">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/HelpMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lava.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/level.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/entities/Player.java" afterDir="false" />
@@ -16,15 +15,12 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/LevelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/levels/LevelManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/model/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/LoadSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/utils/LoadSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/klochikhina/view/GameWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Entity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/entities/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/Level.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/LevelManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/levels/LevelManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/model/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/utils/LoadSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/utils/LoadSave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GamePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GamePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/nsu/klochikhina/view/GameWindow.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -118,7 +115,13 @@
       <workItem from="1684327271442" duration="3645000" />
       <workItem from="1684470256834" duration="6372000" />
       <workItem from="1685361348378" duration="220000" />
-      <workItem from="1685361634511" duration="30650000" />
+      <workItem from="1685361634511" duration="32140000" />
+      <workItem from="1685505599517" duration="9368000" />
+      <workItem from="1685670867411" duration="4000" />
+      <workItem from="1688133629456" duration="1322000" />
+      <workItem from="1693838028624" duration="334000" />
+      <workItem from="1694234736558" duration="1124000" />
+      <workItem from="1698994341301" duration="527000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683122594554</created>
@@ -176,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684343213225</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="добавила фон (двигаются облака, город пока стоит на месте, но потом будет двигаться с персонажем), расширила LevelManager, и ещё много всего...">
+      <created>1685464067023</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685464067023</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +210,7 @@
     <MESSAGE value="небольшие поправки пикселей в спрайтах и поменяла кнопку трансформации" />
     <MESSAGE value="upd" />
     <MESSAGE value="добавляю то, что сделала на паре" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавляю то, что сделала на паре" />
+    <MESSAGE value="добавила фон (двигаются облака, город пока стоит на месте, но потом будет двигаться с персонажем), расширила LevelManager, и ещё много всего..." />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила фон (двигаются облака, город пока стоит на месте, но потом будет двигаться с персонажем), расширила LevelManager, и ещё много всего..." />
   </component>
 </project>
